@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="create_item_h_buttom">60dp</dimen>
+    <dimen name="create_item_buttom">100dp</dimen>
+    <dimen name="createscene_textsize">20sp</dimen>
+    <dimen name="create_vp1_textsize">16dp</dimen>
+    <dimen name="create_vp2_textsize">16dp</dimen>
+    <dimen name="create_vp3_textsize">16dp</dimen>
+    <dimen name="create_vp4_textsize">16dp</dimen>
+    <dimen name="create_vp5_textsize">16dp</dimen>
+    <dimen name="create_vp6_textsize">16dp</dimen>
+    <dimen name="create_vp7_textsize">16dp</dimen>
+    <dimen name="create_vp8_textsize">16dp</dimen>
+    <dimen name="create_item_textsize">16dp</dimen>
+    <dimen name="list_textsize">16dp</dimen>
+    <dimen name="list_margin">16dp</dimen>
+    <dimen name="create_item2_w_buttom">200dp</dimen>
+    <dimen name="create_item2_h_buttom">40dp</dimen>
+    <dimen name="create_item_margin_bottom">6dp</dimen>
+    <dimen name="create_item_margin_right">16dp</dimen>
+    <dimen name="toolbar_size">48dp</dimen>
+    <dimen name="input_text_size">16dp</dimen>
+    <dimen name="text_default_size">14sp</dimen>
+</resources>

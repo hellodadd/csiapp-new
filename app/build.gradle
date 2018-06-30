@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias KEYSTORE_ALIAS
+            keyPassword KEYSTORE_PASSWORD
+            storeFile file(KEYSTORE_FILE)
+            storePassword KEYSTORE_ALIAS_PASSWORD
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.android.csiapp"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1702211307
+        versionName "1.2.7"
+        ndk{
+            abiFilters "armeabi"
+        }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDir "libs"
+        assets.srcDir "assets"
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    // rename the apk with the version name
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    "CSIAPP-${variant.buildType.name}-${variant.versionName}.apk".toLowerCase())
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile ('com.jakewharton:butterknife:7.0.1') {
+        exclude group: 'com.squareup'
+    }
+    compile files('libs/ksoap2-android-assembly-3.6.2-jar-with-dependencies.jar')
+    compile files('libs/dom4j-1.6.1.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/AMap3DMap_4.1.1_AMapLocation_3.0.0_20161019.jar')
+    provided files(getLayoutLibPath())
+    compile 'com.droi.sdk:Core:+'
+    compile 'com.droi.sdk:selfupdate:+'
+    compile(name:'cqdrawlibrary', ext:'aar')
+    // 使用APT工具产生辅助程序代码，需要使用Annotation Process Tool功能时添加，非必要
+    //apt 'com.droi.sdk:annotationprocessor:1.0.3428'
+    // DroiCore SDK使用的3rd http函数库
+    // Core SDK从1.1.3893开始要求OkHttp3版本为3.8.0(含)以上
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    //support-v4 做6.0权限判断
+    //compile 'com.android.support:support-v4:25.3.1'
+    // DroiCore SDK
+}
+
+def getLayoutLibPath() {
+    def rootDir = project.rootDir
+    def localProperties = new File(rootDir, "local.properties")
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream {
+            instr -> properties.load(instr)
+        }
+        def sdkDir = properties.getProperty('sdk.dir')
+        def compileSdkVersion = android.compileSdkVersion
+        Console.println("app compileSdkVersion : " + compileSdkVersion)
+        def androidJarPath = sdkDir + "/platforms/" + compileSdkVersion + "/data/layoutlib.jar"
+        return androidJarPath
+    }
+    return rootDir
+}

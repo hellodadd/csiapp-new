@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">快勘</string>
+
+    <!-- Strings related to Login -->
+    <string name="prompt_user"><font size="15">使用者帐号</font></string>
+    <string name="prompt_password"><font size="15">密码</font></string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="data_recorvy">恢复数据</string>
+    <string name="error_field_required">需要輸入使用者账号</string>
+    <string name="error_invalid_user">使用者帐号无效</string>
+    <string name="error_invalid_password">密码无效</string>
+    <string name="error_incorrect_password">密码不正確</string>
+    <string name="error_initial_device">尚未初始化设备</string>
+    <string name="permission_rationale">"需要提供联系人权限"</string>
+
+    <!-- Strings related to Main -->
+    <string name="text_create">新建现场</string>
+    <string name="text_list">现场列表</string>
+    <string name="text_setting">设置</string>
+    <string name="text_cell_scene">场景采集</string>
+    <string name="text_cell_signal">信号采集</string>
+
+    <!-- Strings related to Create Scene -->
+    <string name="title_activity_createscene">新建现场</string>
+    <string name="title_activity_editscene">修改现场</string>
+
+    <string name="title_activity_step0">接勘</string>
+    <string name="title_activity_step1">现场访问</string>
+    <string name="title_activity_step2">现场图</string>
+    <string name="title_activity_step3">现场照片</string>
+    <string name="title_activity_step4">痕迹物证</string>
+    <string name="title_activity_step5">勘验情况</string>
+    <string name="title_activity_step6">分析意见</string>
+    <string name="title_activity_step7">见证人</string>
+
+    <string name="step_1">接勘</string>
+    <string name="red_title">*红色为必填</string>
+    <string name="casetype">案件类别</string>
+    <string name="area">发案区划</string>
+    <string name="location">发案地点</string>
+    <string name="occurred_start_time">发案开始时间</string>
+    <string name="occurred_end_time">发案结束时间</string>
+    <string name="occurred_time">发案时间</string>
+    <string name="get_access_time">接勘时间</string>
+    <string name="units_assigned">指派单位</string>
+    <string name="access_policemen">接警人</string>
+    <string name="access_start_time">勘验开始时间</string>
+    <string name="access_end_time">勘验结束时间</string>
+    <string name="access_location">勘验地点</string>
+    <string name="case_occur_process">案件发现过程</string>
+    <string name="scene_condition">现场条件</string>
+    <string name="change_reason">变动原因</string>
+    <string name="weather_condition">天气状况</string>
+    <string name="wind_direction">风向</string>
+    <string name="temperature">温度</string>
+    <string name="humidity">湿度</string>
+    <string name="access_reason">勘验事由</string>
+    <string name="illumination_condition">光照条件</string>
+    <string name="productPeople_name">保护人姓名</string>
+    <string name="productPeople_unit">保护人单位</string>
+    <string name="productPeople_duties">保护人职务</string>
+    <string name="safeguard">保护措施</string>
+    <string name="scene_conductor">现场指挥人员</string>
+    <string name="access_inspectors">勘验检查人员</string>
+
+    <string name="step_2">现场访问</string>
+    <string name="add_people">添加关联人</string>
+    <string name="add_item">添加损失物品</string>
+    <string name="add_tools">添加作案工具</string>
+    <string name="title_activity_peopleinformation">关联人信息</string>
+    <string name="type">案件人关系</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="identity_number">身份证号</string>
+    <string name="contact_number">联系电话</string>
+    <string name="living_address">现居地址</string>
+    <string name="title_activity_lostitem">损失物品</string>
+    <string name="item_name">品名</string>
+    <string name="brand_model">厂牌型号</string>
+    <string name="amount">数量</string>
+    <string name="value">价值（元）</string>
+    <string name="feature_description">特征描述</string>
+    <string name="title_activity_crimetool">作案工具</string>
+    <string name="tool_name">工具名称</string>
+    <string name="tool_category">工具痕迹目</string>
+    <string name="tool_source">工具来源</string>
+    <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM0123456789</string>
+
+    <string name="step_3">现场图</string>
+    <string name="position">方位示意图</string>
+    <string name="flat">平面示意图</string>
+    <string name="title_activity_position_information">方位示意图</string>
+    <string name="title_activity_flat_information">平面示意图</string>
+    <string name="title_activity_new_position">方位示意图</string>
+    <string name="title_activity_offlinemap">下载离线地图</string>
+    <string name="screen_shot">截取</string>
+    <string name="step_4">现场照片</string>
+    <string name="position_image">方位照片</string>
+    <string name="like_image">概貌照片</string>
+    <string name="important_position">重点部位</string>
+
+    <string name="step_5">痕迹物证</string>
+    <string name="scene_evidence">现场痕迹</string>
+    <string name="monitoring_screen">监控画面</string>
+    <string name="camera_position">摄像头位置</string>
+    <string name="title_activity_new_evidence">现场痕迹</string>
+    <string name="category">类型</string>
+    <string name="evidence_hand">手印痕迹</string>
+    <string name="evidence_foot">足印痕迹</string>
+    <string name="evidence_tool">工具痕迹</string>
+    <string name="evidence_other">其他痕迹</string>
+    <string name="evidence_name">物证名称</string>
+    <string name="evidence_name_other">其他物证</string>
+    <string name="legacy_site">遗留部位</string>
+    <string name="basic_feature">基本特征</string>
+    <string name="infer">工具推断</string>
+    <string name="extraction_method">提取方法</string>
+    <string name="extraction_time">提取时间</string>
+    <string name="extraction_people">提取人</string>
+
+    <string name="step_6">勘验情况</string>
+    <string name="automatic_generated">自动生成</string>
+
+    <string name="step_7">分析意见</string>
+    <string name="crime_people_number">作案人数</string>
+    <string name="crime_means">作案手段</string>
+    <string name="crime_character">案件性质</string>
+    <string name="crime_entrance">作案入口</string>
+    <string name="crime_timing">作案时机</string>
+    <string name="select_object">选择对象</string>
+    <string name="crime_export">作案出口</string>
+    <string name="people_feature">作案人特点</string>
+    <string name="crime_feature">作案特点</string>
+    <string name="intrusive_method">侵入方式</string>
+    <string name="select_location">选择处所</string>
+    <string name="crime_purpose">作案动机目的</string>
+
+    <string name="step_8">见证人</string>
+    <string name="add_witness_inforamtion">添加见证人</string>
+    <string name="title_activity_witness_peopleinformation">见证人信息</string>
+    <string name="birthday_date">出生日期</string>>
+
+    <string name="step_9">静态采集</string>
+
+    <!-- Strings related to List -->
+    <string name="title_activity_list">现场列表</string>
+    <string name="title_activity_list_search">搜尋</string>
+    <string name="title_activity_list_delete">刪除</string>
+    <string name="titile_activity_list_reportscence">现场上传</string>
+    <string name="casetype_item">类型 :</string>
+    <string name="area_item">区域 :</string>
+    <string name="time_item">时间 :</string>
+    <string name="complete_item">现场状态 :</string>
+    <string name="incomplete">不完整</string>
+    <string name="complete">完整</string>
+    <string name="commit">已上报</string>
+    <string name="list_search">搜寻</string>
+    <string name="list_delete">删除</string>
+    <string name="list_reportscene">现场上传</string>
+    <string name="list_selectall">全选</string>
+    <!-- Strings related to Settings -->
+    <string name="title_activity_setting">设置</string>
+    <string name="scene_manager">现场管理</string>
+    <string name="backup">备份数据</string>
+    <string name="recovery">恢复数据</string>
+    <string name="reactive">重新激活</string>
+    <string name="about">关于\n\n深圳联赢信息技术有限公司\n网址:LianY.com\n</string>
+    <string name="bcakup_prompt_title">提示</string>
+    <string name="backup_prompt_msg">备份数据会覆盖上一次数据文件, 是否确认备份?</string>
+    <string name="reactive_promp_title">重新激活</string>
+    <string name="reactive_prompt_msg">清空所有数据并不可恢复, 是否继续?</string>
+
+    <!-- Common -->
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="reset">清除</string>
+
+    <!-- WebService -->
+    <string name="device_initial">初始化字典</string>
+    <string name="app_update">更新软件</string>
+    <string name="scene_upload">上传现场</string>
+    <string name="device_initial_success">初始化成功</string>
+    <string name="device_initial_failed">初始化失败</string>
+    <string name="app_update_success">更新软件成功</string>
+    <string name="app_update_failed">更新软件失败</string>
+    <string name="scene_upload_success">上传现场成功</string>
+    <string name="scene_upload_failed">上传现场失败，请在网络条件好的情况下重新上传</string>
+    <string name="unavailablenetwork">没有可用的网络连接</string>
+
+    <string name="simple_menu_name">Simple Adapter</string>
+    <string name="simple_menu_condensed">Simple</string>
+    <string name="fancy_menu_name">Fancy Menu</string>
+    <string name="fancy_menu_condensed">Fancy</string>
+    <string name="expand_all_menu">Expand all</string>
+    <string name="expand_all_condensed">Expand All</string>
+    <string name="collapsible_menu_enable">Enable collapsible</string>
+    <string name="collapsible_condensed_enable">Enable collapsible</string>
+    <string name="collapsible_menu_disable">Disable collapsible</string>
+    <string name="collapsible_condensed_disable">Disable collapsible</string>
+    <string name="collapse_all_menu">Collapse all</string>
+    <string name="collapse_all_condesed">Collapse all</string>
+    <string name="expand_menu">Expand</string>
+    <string name="expand_menu_condensed">Expand</string>
+    <string name="delete_menu">Delete</string>
+    <string name="delete_menu_condensed">Delete</string>
+
+    <string name="image_reqWidth">1600</string>
+    <string name="image_reqHeight">1600</string>
+    <!-- config_app_network 1:采用网络上传数据，0:连接数据线上传数据 -->
+    <string name="config_app_network">0</string>
+    <string name="default_loading">Loading…</string>
+    <string name="evidence_type">痕迹类型</string>
+    <string name="photo_edit_hint">添加照片描述</string>
+    <string name="default_info">现场方位图</string>
+    <string name="default_info2">现场示意图</string>
+</resources>

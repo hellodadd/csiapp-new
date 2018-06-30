@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">
+
+    <EditText
+        android:id="@+id/clearable_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_bg"
+        android:gravity="left"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="24dp"
+        android:textSize="@dimen/create_item_textsize"/>
+
+    <Button
+        android:id="@+id/clearable_button_clear"
+        android:layout_width="47px"
+        android:layout_height="23px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/clear" />
+</RelativeLayout>

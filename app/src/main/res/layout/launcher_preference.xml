@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="110px"
+    android:background="@drawable/selector_preference_bg"
+    android:duplicateParentState="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingTop="8.0dip">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginRight="16.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:minHeight="32.0dip"
+            android:orientation="vertical">
+
+            <com.android.csiapp.EnhancedTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:textColor="@color/selector_preference_title"
+                android:textSize="16.0dp"
+                launcher:drawableRightHeight="24.0dip"
+                launcher:drawableRightWidth="24.0dip" />
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preference_summary"
+                android:textSize="12.0dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/red_new_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/red_dot"
+            android:visibility="gone" />
+
+        <com.android.csiapp.Switch
+            android:id="@+id/switch1"
+            android:layout_width="38dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            launcher:btnCheckedColor="@color/launcher_green"
+            launcher:btnUnCheckedColor="#FFF"
+            launcher:innerBroderWidth="1dp"
+            launcher:innerCheckedBroderColor="@color/launcher_green"
+            launcher:innerPadding="0dp"
+            launcher:innerUnCheckedBroderColor="#EE444444"
+            launcher:lineCheckedColor="@color/launcher_green_light"
+            launcher:lineHeight="3dp"
+            launcher:lineUnCheckedColor="#99444444" />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingTop="5.0dip"
+            android:src="@drawable/preference_right_arrow"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/preference_triangle"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingTop="5.0dip"
+                android:src="@drawable/preference_triangle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/preference_list_divider" />
+</LinearLayout>

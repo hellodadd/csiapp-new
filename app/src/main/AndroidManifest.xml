@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.csiapp">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- For Baidu Map -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="CsiApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".LockedActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Crime.createscene.CreateSceneActivity"
+            android:configChanges="mcc|mnc"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+
+                <!-- 新增用的名稱 -->
+                <action android:name="com.android.csiapp.ADD_SCENE" />
+                <!-- 修改用的名稱 -->
+                <action android:name="com.android.csiapp.EDIT_SCENE" />
+                <!-- 一定要加入，內容固定不變 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Crime.listscene.ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.listscene.ListDeleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.listscene.ListSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.setting.SettingActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP2_NewPeopleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP2_NewItemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP2_NewToolActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP3_PositionInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP3_NewPositionActivity_Amap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP3_NewPositionActivity_Baidumap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP3_NewFlatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP5_NewEvidenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.createscene.CreateScene_FP8_AddWitnessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.utils.HandWriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.utils.OfflineMapActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.utils.PriviewPhotoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Crime.utils.tree.TreeViewListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Crime.createscene.MxCADAppActivity" android:label="@string/app_name" android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:configChanges="orientation">
+        </activity>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <service android:name="com.amap.api.location.APSService"></service>
+        <service
+            android:name=".PcSocketTransmission.SocketService"
+            android:exported="true"></service>
+        <service
+            android:name=".WebServiceTransmission.WebServiceSocket"
+            android:exported="true"></service>
+        <service
+            android:name=".RestartService"
+            android:exported="false"
+            android:process=":restartservice" />
+
+        <receiver
+            android:name=".PcSocketTransmission.AppInstallReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qI2cRYpq2LyyZZjnm7ifMyeIXZVcnGKe" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5d1714e4a82d5b185fd043188b0459e1" />
+
+        <activity android:name=".Crime.listscene.ListReportSceneActivity"></activity>
+
+        <!-- Application ID 有sand和prod之分，在开发时使用sand，正式上线时切换为prod，另外需要在Web控制台进行部署到上次环境操作 -->
+        <meta-data android:name="com.droi.sdk.application_id" android:value="anltmbzhjFUS94mlx_yptQoIeT2WNciylQB4ofQA" />
+        <!-- ChannelName 为开发者自定义的渠道名称 -->
+        <meta-data android:name="com.droi.sdk.channel_name" android:value="csi" />
+    </application>
+
+</manifest>

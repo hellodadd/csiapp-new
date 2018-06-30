@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_size"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/create_item_margin_bottom">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:id="@+id/new_position" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/north"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/table_position1"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/black"
+            android:visibility="gone">
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="图例说明"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table_position2"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@color/black"
+            android:visibility="gone">
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@drawable/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"/>
+                </RelativeLayout>
+                <TextView
+                    android:text="中心现场"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table_flat"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/black"
+            android:visibility="gone">
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="图例说明"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="以下空白"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="发案时间"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/incident_time"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="发案地点"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/incident_location"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="制图单位"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/create_unit"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="制图人"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/create_people"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="制图时间"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/create_time"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

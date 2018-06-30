@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#422A82</color>
+    <color name="colorPrimaryDark">#422A82</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="titleBar">#FFFFFF</color>
+    <color name="text">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="preference_item_pressed">#19ffffff</color>
+    <color name="preference_item_divider">#e5e5e5</color>
+    <color name="launcher_white">#FFFFFFFF</color>
+
+    <color name="preference_bg">#fff4f4f4</color>
+    <color name="preference_title">#ff3e3e3e</color>
+    <color name="preference_summary">#80444444</color>
+    <color name="launcher_transparent">#00000000</color>
+    <color name="launcher_transparent_black">#55000000</color>
+    <color name="launcher_green">#0F9F5A</color>
+    <color name="launcher_green_light">#990F9F5A</color>
+    <color name="launcher_grey">#80444444</color>
+    <color name="launcher_dark">#ff444444</color>
+    <color name="launcher_accent_color">#ff009688</color>
+</resources>

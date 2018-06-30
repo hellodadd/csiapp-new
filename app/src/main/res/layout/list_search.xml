@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:treeView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:popupTheme="@style/ToolbarPopupTheme"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_size"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_list_search"
+            android:textSize="20sp"
+            android:textColor="@color/titleBar"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar">
+        <Button
+            android:id="@+id/categoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casetype"
+            android:background="#FF888888"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/areaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/area"
+            android:background="#FF888888"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/occurred_time"
+            android:background="#FF888888"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/CategoryLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/clickCategoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/list_search" />
+        <com.android.csiapp.Crime.utils.tree.TreeViewList
+            android:id="@+id/category_TreeView" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" treeView:indicator_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp" android:layout_marginRight="16dp"
+            android:scrollbars="vertical" android:smoothScrollbar="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/AreaLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/clickAreaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/list_search" />
+        <com.android.csiapp.Crime.utils.tree.TreeViewList
+            android:id="@+id/area_TreeView" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" treeView:indicator_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp" android:layout_marginRight="16dp"
+            android:scrollbars="vertical" android:smoothScrollbar="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/TimeLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/clickTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/list_search" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="发案开始时间" />
+        <com.android.csiapp.Crime.utils.DateTimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:id="@+id/startTime" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="发案结束时间" />
+        <com.android.csiapp.Crime.utils.DateTimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:id="@+id/endTime" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/linearlayout">
+    </ListView>
+</RelativeLayout>

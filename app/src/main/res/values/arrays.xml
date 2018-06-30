@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--page1-->
+    <string-array name="casetype">
+        <item>盗窃电动自行车</item>
+        <item>盗窃牲畜</item>
+        <item>扒窃</item>
+        <item>盗窃摩托车</item>
+        <item>盗窃自行车</item>
+        <item>挡路抢劫</item>
+        <item>故意伤害</item>
+        <item>抢夺</item>
+        <item>诈骗</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>城口县刑事侦查大队</item>
+        <item>城口县葛城派出所</item>
+        <item>城口县高燕派出所</item>
+        <item>城口县龙田派出所</item>
+        <item>城口县高观派出所</item>
+        <item>城口县修齐派出所</item>
+        <item>城口县庙坝派出所</item>
+        <item>城口县巴山派出所</item>
+        <item>城口县明通派出所</item>
+        <item>城口县坪坝派出所</item>
+        <item>城口县厚坪派出所</item>
+        <item>城口县东安派出所</item>
+        <item>城口县双河派出所</item>
+        <item>城口县咸宜派出所</item>
+        <item>城口县明中派出所</item>
+        <item>城口县复兴派出所</item>
+        <item>城口县北屏派出所</item>
+    </string-array>
+
+    <string-array name="sceneCondition">
+        <item>原始现场</item>
+        <item>变动现场</item>
+    </string-array>
+
+    <string-array name="weatherCondition">
+        <item>晴</item>
+        <item>雨</item>
+        <item>阳</item>
+        <item>雪</item>
+        <item>雾</item>
+    </string-array>
+
+    <string-array name="windDirection">
+        <item>东风</item>
+        <item>西风</item>
+        <item>北风</item>
+        <item>南风</item>
+        <item>东南风</item>
+        <item>西南风</item>
+        <item>西北风</item>
+        <item>东北风</item>
+        <item>其他</item>
+        <item>无风</item>
+    </string-array>
+
+    <string-array name="illuminationCondition">
+        <item>自然光</item>
+        <item>灯光</item>
+        <item>特种光</item>
+    </string-array>
+
+    <string-array name="sceneConductor">
+        <item>徐杰</item>
+        <item>杨奚</item>
+        <item>王方圓</item>
+    </string-array>
+
+    <string-array name="accessInspectors">
+        <item>徐杰</item>
+        <item>杨奚</item>
+        <item>王方圓</item>
+    </string-array>
+
+    <!--page2-->
+    <string-array name="releation_people">
+        <item>报案人</item>
+        <item>被害人</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+        <item>未知</item>
+    </string-array>
+
+    <string-array name="tool_category">
+        <item>使用工具类</item>
+        <item>交通工具类</item>
+        <item>毒物类</item>
+        <item>爆炸物品类</item>
+        <item>工艺首饰及文物类</item>
+        <item>家用电器类</item>
+        <item>仪器仪表及计量器材类</item>
+    </string-array>
+
+    <string-array name="tool_source">
+        <item>随身携带</item>
+        <item>就地取材</item>
+        <item>其它</item>
+    </string-array>
+
+    <!--page5-->
+    <string-array name="evidence_category">
+        <item>手印</item>
+        <item>足迹</item>
+        <item>工痕</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="evidence_hand">
+        <item>指纹</item>
+        <item>指节纹</item>
+        <item>掌纹</item>
+        <item>手套印</item>
+        <item>其他手印痕迹</item>
+    </string-array>
+    <string-array name="evidence_foot">
+        <item>鞋印</item>
+        <item>穿袜足印</item>
+        <item>赤足印</item>
+        <item>其他足印痕迹</item>
+    </string-array>
+    <string-array name="evidence_tool">
+        <item>撬压</item>
+        <item>打击</item>
+        <item>擦划</item>
+        <item>钳剪</item>
+        <item>刺切</item>
+        <item>割削</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="tool_infer">
+        <item>刀具</item>
+        <item>钳类</item>
+        <item>剪刀</item>
+        <item>撬棒</item>
+        <item>螺丝刀</item>
+        <item>钻头</item>
+        <item>锉刀</item>
+        <item>气割</item>
+        <item>插片</item>
+        <item>自行车撑脚</item>
+        <item>麻醉品</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="method_hand">
+        <item>直接照相</item>
+        <item>粉末/胶带纸</item>
+        <item>粉末/照相</item>
+        <item>502/照相</item>
+        <item>茚三酮/照相</item>
+        <item>硝酸银/照相</item>
+        <item>碘熏/照相</item>
+        <item>其他/照相</item>
+        <item>DFO/照相</item>
+    </string-array>
+    <string-array name="method_foot">
+        <item>直接照相</item>
+        <item>静电/照相</item>
+        <item>制模/照相</item>
+        <item>显现/照相</item>
+        <item>其他/照相</item>
+        <item>即时贴提取</item>
+    </string-array>
+    <string-array name="method_tool">
+        <item>直接照相</item>
+        <item>原物提取</item>
+        <item>制模</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="get_people">
+        <item>徐杰</item>
+        <item>杨奚</item>
+        <item>王方圓</item>
+    </string-array>
+
+    <!--page7-->
+    <string-array name="people_number">
+        <item>单人</item>
+        <item>两人</item>
+        <item>多人</item>
+        <item>不确定</item>
+    </string-array>
+    <string-array name="crime_means">
+        <item>盗窃</item>
+        <item>扒窃</item>
+        <item>挡路抢劫</item>
+        <item>故意伤害</item>
+        <item>抢夺</item>
+        <item>诈骗</item>
+    </string-array>
+    <string-array name="crime_character">
+        <item>盗窃</item>
+        <item>扒窃</item>
+        <item>挡路抢劫</item>
+        <item>故意伤害</item>
+        <item>抢夺</item>
+        <item>诈骗</item>
+    </string-array>
+    <string-array name="crime_entrance">
+        <item>门</item>
+        <item>窗</item>
+        <item>阳台</item>
+        <item>房顶</item>
+        <item>墙洞</item>
+        <item>地洞</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="crime_timing">
+        <item>雨天</item>
+        <item>雪天</item>
+        <item>雾天</item>
+        <item>晴天</item>
+        <item>风天</item>
+        <item>阴天</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="select_object">
+        <item>老人</item>
+        <item>小孩</item>
+        <item>女人</item>
+        <item>男人</item>
+    </string-array>
+    <string-array name="crime_export">
+        <item>门</item>
+        <item>窗</item>
+        <item>阳台</item>
+        <item>房顶</item>
+        <item>墙洞</item>
+        <item>地洞</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="crime_feature">
+        <item>单独作案</item>
+        <item>内部勾结</item>
+        <item>外来勾结</item>
+    </string-array>
+    <string-array name="intrusive_method">
+        <item>从门侵入</item>
+        <item>从窗侵入</item>
+    </string-array>
+    <string-array name="select_location">
+        <item>工厂</item>
+        <item>农场</item>
+        <item>果园</item>
+    </string-array>
+    <string-array name="crime_purpose">
+        <item>报复</item>
+        <item>图财</item>
+        <item>嫉妒</item>
+    </string-array>
+</resources>
