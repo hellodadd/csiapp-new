@@ -983,12 +983,14 @@ public class CrimeProvider {
                     }else {
                         mTraceInfo.put("filename",mEvidenceItem.get(iE).getPhotoPath().substring(mEvidenceItem.get(iE).getPhotoPath().lastIndexOf("/")));
                     }
+                    /*
                     String desc = mEvidenceItem.get(iE).getPhotoInfo();
                     if (desc == null || desc.isEmpty()) {
                         mTraceInfo.put("description", "");
                     }else {
                         mTraceInfo.put("description", desc);
                     }
+                    */
                     mTraceInfo.put("type",mEvidenceItem.get(iE).getEvidenceCategory());
                     mTraceInfo.put("subtype",mEvidenceItem.get(iE).getEvidence());
                     mTraceInfo.put("material",mEvidenceItem.get(iE).getEvidenceName());

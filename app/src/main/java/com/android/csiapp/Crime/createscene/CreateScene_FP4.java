@@ -112,6 +112,7 @@ public class CreateScene_FP4 extends Fragment {
         mPosition_Adapter.setOnPhotoUpdataInfoListen(new PhotoAdapter.PhotoUpdataInfo() {
             @Override
             public void onPhotoUpdataInfo(int pos, PhotoItem item) {
+                if (mPositionPhotoProvider != null)
                 mPositionPhotoProvider.update(mPositionList.get(pos).getId(), item);
                 //mPosition_Adapter.notifyDataSetChanged();
             }
@@ -147,6 +148,7 @@ public class CreateScene_FP4 extends Fragment {
         mLike_Adapter.setOnPhotoUpdataInfoListen(new PhotoAdapter.PhotoUpdataInfo() {
             @Override
             public void onPhotoUpdataInfo(int pos, PhotoItem item) {
+                if (mOverviewPhotoProvider != null)
                 mOverviewPhotoProvider.update(mLikeList.get(pos).getId(), item);
                 //mLike_Adapter.notifyDataSetChanged();
             }
@@ -182,6 +184,7 @@ public class CreateScene_FP4 extends Fragment {
         mImportant_Adapter.setOnPhotoUpdataInfoListen(new PhotoAdapter.PhotoUpdataInfo() {
             @Override
             public void onPhotoUpdataInfo(int pos, PhotoItem item) {
+                if (mImportantPhotoProvider != null)
                 mImportantPhotoProvider.update(mImportantList.get(pos).getId(), item);
                 //mImportant_Adapter.notifyDataSetChanged();
             }

@@ -116,7 +116,8 @@ public class CreateScene_FP5 extends Fragment {
         mEvidenceList = mItem.getEvidenceItem();
         mEvidence_List=(ListView) view.findViewById(R.id.evidence_listview);
         mEvidence_Adapter = new EvidenceAdapter(context, mEvidenceList);
-        mEvidence_Adapter.setShowPhotoInfo(true);
+        mEvidence_Adapter.setShowPhotoInfo(false);
+        /*
         mEvidence_Adapter.setPhotoTouchListen(new EvidenceAdapter.OnPhotoTouchListen() {
             @Override
             public void onPhotoTouch(int pos) {
@@ -135,6 +136,7 @@ public class CreateScene_FP5 extends Fragment {
                 mEvidenceProvider.update(mEvidenceList.get(pos).getId(), item);
             }
         });
+        */
         mEvidence_List.setAdapter(mEvidence_Adapter);
         CreateSceneUtils.setListViewHeightBasedOnChildren(mEvidence_List);
         AdapterView.OnItemClickListener itemListener1 = new AdapterView.OnItemClickListener() {
@@ -149,7 +151,7 @@ public class CreateScene_FP5 extends Fragment {
                 startActivityForResult(it, CreateSceneUtils.EVENT_TYPE_EVIDENCE);
             }
         };
-        //mEvidence_List.setOnItemClickListener(itemListener1);
+        mEvidence_List.setOnItemClickListener(itemListener1);
 
         mAdd_Monitoring = (LinearLayout) view.findViewById(R.id.add_monitoring_screen);
         mAdd_Monitoring.setOnClickListener(new View.OnClickListener() {
@@ -167,6 +169,7 @@ public class CreateScene_FP5 extends Fragment {
         mMonitoring_Adapter.setOnPhotoUpdataInfoListen(new PhotoAdapter.PhotoUpdataInfo() {
             @Override
             public void onPhotoUpdataInfo(int pos, PhotoItem item) {
+                if (mMonitoringPhotoProvider != null)
                 mMonitoringPhotoProvider.update(mMonitoringList.get(pos).getId(), item);
                 //mMonitoring_Adapter.notifyDataSetChanged();
             }
@@ -202,6 +205,7 @@ public class CreateScene_FP5 extends Fragment {
         mCamera_Adapter.setOnPhotoUpdataInfoListen(new PhotoAdapter.PhotoUpdataInfo() {
             @Override
             public void onPhotoUpdataInfo(int pos, PhotoItem item) {
+                if (mCameraPhotoProvider != null)
                 mCameraPhotoProvider.update(mCameraList.get(pos).getId(), item);
                 //mCamera_Adapter.notifyDataSetChanged();
             }

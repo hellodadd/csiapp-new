@@ -82,7 +82,7 @@ public class PhotoAdapter extends BaseAdapter {
         if(!path.isEmpty()){
             bp = CreateSceneUtils.loadBitmapFromFile(new File(path));
             if(bp!=null) holder.txtItemPhoto.setImageBitmap(bp);
-            if (!showPhotoInfo) {
+            if (showPhotoInfo) {
                 holder.txtItemPhoto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

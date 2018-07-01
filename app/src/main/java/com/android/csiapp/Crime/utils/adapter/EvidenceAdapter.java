@@ -75,6 +75,7 @@ public class EvidenceAdapter extends BaseAdapter {
         if(!path.isEmpty()){
             Bitmap bitmap = CreateSceneUtils.loadBitmapFromFile(new File(path));
             if(bitmap!=null) holder.txtItemPhoto.setImageBitmap(bitmap);
+            /*
             holder.txtItemPhoto.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -83,6 +84,7 @@ public class EvidenceAdapter extends BaseAdapter {
                     }
                 }
             });
+            */
         }
 
         String info = item.getPhotoInfo();
